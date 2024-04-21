@@ -1,0 +1,47 @@
+---
+active: none
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Andrew Bangs is a music photographer based in Seattle, WA" />
+    <title>Andrew Bangs | Seattle Music Photographer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/css/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit-icons.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="uk-navbar-container uk-navbar-transparent">
+        <div class="uk-container">
+            <div uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" href="/">bangsphoto</a>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <!-- <li class="{{ "uk-active" if active == "snaps" }}">
+                            <a href="/snaps">snaps</a>
+                        </li> -->
+                        <li class="{{ "uk-active" if active == "music" }}">
+                            <a href="/music">music</a>
+                        </li>
+                        <!-- <li class="{{ "uk-active" if active == "about" }}">
+                            <a href="/about">about</a>
+                        </li> -->
+                        <li><a href="mailto:andrew@bangsphoto.com">contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="uk-container">
+        {{ content | safe }}
+    </div>
+  </body>
+</html>

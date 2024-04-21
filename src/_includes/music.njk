@@ -1,0 +1,20 @@
+---
+layout: layout.njk
+active: music
+---
+<div class="uk-grid-small uk-child-width-1-1@s uk-child-width-1-1@m" uk-grid="masonry: pack">
+    <figure uk-lightbox>
+        <a href="../img/{{ music.hero.file }}" data-caption="{{ music.hero.caption }}" >
+            <img src="../img/{{ music.hero.file }}" alt="{{ music.hero.caption }}">
+        </a>
+    </figure>
+</div>
+<div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-2@m" uk-grid="masonry: pack">
+    {% for image in music.grid %}
+        <figure uk-lightbox>
+            <a href="../img/{{ image.file }}" data-caption="{{ image.caption }}">
+                <img src="../img/{{ image.file }}" alt="{{ image.caption }}" loading="lazy">
+            </a>
+        </figure>
+    {% endfor %}
+</div>
