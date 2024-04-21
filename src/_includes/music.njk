@@ -13,7 +13,7 @@ active: music
     {% for image in music.grid %}
         <figure uk-lightbox>
             <a href="../img/{{ image.file }}" data-caption="{{ image.caption }}">
-                <img src="../img/{{ image.file }}" alt="{{ image.caption }}" loading="lazy">
+                <img src="../img/{{ image.file }}" alt="{{ image.caption }}" loading="{{ "lazy" if loop.index > 2 else "eager" }}">
             </a>
         </figure>
     {% endfor %}
