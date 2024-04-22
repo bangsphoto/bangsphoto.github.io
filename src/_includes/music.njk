@@ -2,10 +2,15 @@
 layout: layout.njk
 active: music
 ---
+{# <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script> #}
 <div class="uk-grid-small uk-child-width-1-1@s uk-child-width-1-1@m" uk-grid="masonry: pack">
     <figure uk-lightbox>
         <a href="/img/{{ music.hero.file }}" data-caption="{{ music.hero.caption }}" >
-            <img src="/img/{{ music.hero.file }}" alt="{{ music.hero.caption }}">
+            <img src="/img/{{ music.hero.file }}"
+                alt="{{ music.hero.caption }}"
+                width="{{ music.hero.width }}"
+                height="{{ music.hero.height }}"
+                fetchpriority="high" />
         </a>
     </figure>
 </div>
@@ -13,7 +18,11 @@ active: music
     {% for image in music.grid %}
         <figure uk-lightbox>
             <a href="/img/{{ image.file }}" data-caption="{{ image.caption }}">
-                <img src="/img/{{ image.file }}" alt="{{ image.caption }}" loading="{{ "lazy" if loop.index > 2 else "eager" }}">
+                <img src="/img/{{ image.file }}"
+                    alt="{{ image.caption }}"
+                    width="{{ image.width }}"
+                    height="{{ image.height }}"
+                    loading="{{"eager" if loop.index <= 4 else "lazy"}}" />
             </a>
         </figure>
     {% endfor %}
