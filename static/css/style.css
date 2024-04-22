@@ -1,3 +1,9 @@
 img::selection {
     background: none;
 }
+
+@media (max-width: 639px) {
+    .bp-bio {
+        padding: 0 15px;
+    }
+}
