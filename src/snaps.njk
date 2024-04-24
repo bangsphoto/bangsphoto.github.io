@@ -2,17 +2,15 @@
 layout: layout.njk
 active: snaps
 ---
-<div class="uk-grid-small uk-child-width-1-2@s" uk-grid="masonry: pack">
+<div class="uk-grid-small uk-child-width-1-2@s" uk-grid="masonry: pack" uk-lightbox="animation: slide">
     {% for image in snaps.images %}
-        <figure uk-lightbox>
-            <a href="{{ image.path }}" data-caption="{{ image.caption }}">
-                <img src="{{ image.path }}"
-                    alt="{{ image.caption }}"
-                    width="{{ image.width }}"
-                    height="{{ image.height }}"
-                    loading="{{"eager" if loop.index <= 4 else "lazy"}}" />
-            </a>
-        </figure>
+    <a href="{{ image.path }}" data-caption="{{ image.caption }}">
+        <img src="{{ image.path }}"
+            alt="{{ image.caption }}"
+            width="{{ image.width }}"
+            height="{{ image.height }}"
+            loading="{{"eager" if loop.index <= 4 else "lazy"}}" />
+    </a>
     {% endfor %}
 </div>
 <div class="uk-flex uk-flex-center uk-padding">

@@ -2,27 +2,25 @@
 layout: layout.njk
 active: music
 ---
-<figure uk-lightbox>
-    <a href="{{ music.hero.path }}" data-caption="{{ music.hero.caption }}" >
+<div class="uk-grid-small" uk-grid="masonry: pack" uk-lightbox="animation: slide">
+    <a class="uk-width-1-1" href="{{ music.hero.path }}" data-caption="{{ music.hero.caption }}" >
         <img src="{{ music.hero.path }}"
             alt="{{ music.hero.caption }}"
             width="{{ music.hero.width }}"
             height="{{ music.hero.height }}"
             fetchpriority="high" />
     </a>
-</figure>
-<div class="uk-grid-small uk-child-width-1-2@s" uk-grid="masonry: pack">
-    {% for image in music.images %}
-        <figure uk-lightbox>
-            <a href="{{ image.path }}" data-caption="{{ image.caption }}">
-                <img src="{{ image.path }}"
-                    alt="{{ image.caption }}"
-                    width="{{ image.width }}"
-                    height="{{ image.height }}"
-                    loading="{{"eager" if loop.index <= 4 else "lazy"}}" />
-            </a>
-        </figure>
-    {% endfor %}
+    <div class="uk-grid-small" uk-grid="masonry: pack">
+        {% for image in music.images %}
+        <a class="uk-width-1-2@s" href="{{ image.path }}" data-caption="{{ image.caption }}">
+            <img src="{{ image.path }}"
+                alt="{{ image.caption }}"
+                width="{{ image.width }}"
+                height="{{ image.height }}"
+                loading="{{"eager" if loop.index <= 4 else "lazy"}}" />
+        </a>
+        {% endfor %}
+    </div>
 </div>
 <div class="uk-flex uk-flex-center uk-padding">
     <a href="" uk-totop uk-scroll></a>
