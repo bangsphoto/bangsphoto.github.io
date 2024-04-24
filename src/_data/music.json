@@ -1,98 +1,98 @@
 {
     "hero": {
         "caption": "Arm's Length, 2024",
-        "file": "R0005015-hero.jpg",
+        "path": "/img/music/R0005015-hero.jpg",
         "width": "2160px",
         "height": "1215px"
     },
-    "grid": [
+    "images": [
         {
             "caption": "Theo Croker, 2024",
-            "file": "R0001991.jpg",
+            "path": "/img/music/R0001991.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "Tomo Nakayama, 2024",
-            "file": "R0004031.jpg",
+            "path": "/img/music/R0004031.jpg",
             "width": "1080px",
             "height": "1080px"
         },
         {
             "caption": "Militarie Gun, 2024",
-            "file": "R0003345.jpg",
+            "path": "/img/music/R0003345.jpg",
             "width": "1080px",
             "height": "1080px"
         },
         {
             "caption": "Carly Cosgrove, 2024",
-            "file": "R0004745.jpg",
+            "path": "/img/music/R0004745.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "Carly Cosgrove, 2024",
-            "file": "R0004920.jpg",
+            "path": "/img/music/R0004920.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "Arm's Length, 2024",
-            "file": "R0005056.jpg",
+            "path": "/img/music/R0005056.jpg",
             "width": "1080px",
             "height": "608px"
         },
         {
             "caption": "Pool Kids, 2024",
-            "file": "R0003274.jpg",
+            "path": "/img/music/R0003274.jpg",
             "width": "1080px",
             "height": "1080px"
         },
         {
             "caption": "Small Crush, 2024",
-            "file": "R0005522.jpg",
+            "path": "/img/music/R0005522.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "Spiritual Cramp, 2024",
-            "file": "R0003050.jpg",
+            "path": "/img/music/R0003050.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "Pool Kids, 2024",
-            "file": "R0003193.jpg",
+            "path": "/img/music/R0003193.jpg",
             "width": "720px",
             "height": "1080px"
         },
         {
             "caption": "",
-            "file": "R0002334.jpg",
+            "path": "/img/music/R0002334.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "",
-            "file": "R0002397.jpg",
+            "path": "/img/music/R0002397.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "Yuma Abe, 2024",
-            "file": "R0000311.jpg",
+            "path": "/img/music/R0000311.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "Yuma Abe, 2024",
-            "file": "R0000309.jpg",
+            "path": "/img/music/R0000309.jpg",
             "width": "1080px",
             "height": "1080px"
         },
         {
             "caption": "Arm's Length, 2024",
-            "file": "R0005335.jpg",
+            "path": "/img/music/R0005335.jpg",
             "width": "1080px",
             "height": "1080px"
         }

@@ -1,0 +1,18 @@
+{
+    "images": [
+        {
+            "caption": "Snaps",
+            "path": "/img/snaps/IMG_3205.jpg",
+            "width": "1080px",
+            "height": "1080px",
+            "href": "/snaps"
+        },
+        {
+            "caption": "Music",
+            "path": "/img/music/R0005335.jpg",
+            "width": "1080px",
+            "height": "1080px",
+            "href": "/music"
+        }
+    ]
+}

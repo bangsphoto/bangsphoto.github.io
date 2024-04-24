@@ -2,3 +2,19 @@
 layout: layout.njk
 active: snaps
 ---
+<div class="uk-grid-small uk-child-width-1-2@s" uk-grid="masonry: pack">
+    {% for image in snaps.images %}
+        <figure uk-lightbox>
+            <a href="{{ image.path }}" data-caption="{{ image.caption }}">
+                <img src="{{ image.path }}"
+                    alt="{{ image.caption }}"
+                    width="{{ image.width }}"
+                    height="{{ image.height }}"
+                    loading="{{"eager" if loop.index <= 4 else "lazy"}}" />
+            </a>
+        </figure>
+    {% endfor %}
+</div>
+<div class="uk-flex uk-flex-center uk-padding">
+    <a href="" uk-totop uk-scroll></a>
+</div>
