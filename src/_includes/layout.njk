@@ -20,8 +20,8 @@ active: none
                 <div class="uk-navbar-left">
                     <a class="uk-navbar-item uk-logo" href="/">bangsphoto</a>
                 </div>
-                <div class="uk-navbar-right" uk-dropnav>
-                    <ul class="uk-navbar-right uk-subnav">
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav" uk-dropnav>
                         {% set snapsPrefix = r/^snaps\/*/g %}
                         <li class="{{ "uk-active" if snapsPrefix.test(active) }}">
                             <a href>Snaps <span uk-drop-parent-icon></span></a>
