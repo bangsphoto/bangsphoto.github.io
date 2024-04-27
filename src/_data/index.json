@@ -2,10 +2,10 @@
     "images": [
         {
             "caption": "Snaps",
-            "path": "/img/snaps/IMG_3205.jpg",
+            "path": "/img/busan/IMG_3205.jpg",
             "width": "1080px",
             "height": "1080px",
-            "href": "/snaps"
+            "href": "/snaps/busan"
         },
         {
             "caption": "Music",

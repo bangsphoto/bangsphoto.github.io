@@ -1,9 +1,9 @@
 ---
 layout: layout.njk
-active: snaps
+active: snaps/busan
 ---
 <div class="uk-grid-small uk-child-width-1-2@s" uk-grid="masonry: pack" uk-lightbox="animation: slide">
-    {% for image in snaps.images %}
+    {% for image in busan.images %}
     <a href="{{ image.path }}" data-caption="{{ image.caption }}">
         <img src="{{ image.path }}"
             alt="{{ image.caption }}"
@@ -13,6 +13,4 @@ active: snaps
     </a>
     {% endfor %}
 </div>
-<div class="uk-flex uk-flex-center uk-padding">
-    <a href="" uk-totop uk-scroll></a>
-</div>
+{% include "totop.njk" %}

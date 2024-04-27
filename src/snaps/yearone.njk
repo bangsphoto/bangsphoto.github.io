@@ -1,0 +1,37 @@
+---
+layout: layout.njk
+active: snaps/yearone
+---
+<h2>Year One (2013-2014)</h2>
+<div class="uk-grid-small uk-child-width-1-2@s uk-margin-bottom" uk-grid>
+    <div>
+        <p>Selections from "Year One" – a self-published photobook documenting sights from my first year living in Japan.</p>
+        <p>Stripping away captures of the expected tourist destinations as well as some overly sentimental snaps brings new life to a collection from another life.</p>
+        <p>All photos in this series made with an iPhone 5.</p>
+    </div>
+</div>
+<div uk-lightbox="animation: slide">
+    <div class="uk-grid-small uk-child-width-1-2@s" uk-grid>
+        {% for image in yearone.images.slice(0,2) %}
+        <a href="{{ image.path }}" data-caption="{{ image.caption }}">
+            <img src="{{ image.path }}"
+                alt="{{ image.caption }}"
+                width="{{ image.width }}"
+                height="{{ image.height }}"
+                loading="eager" />
+        </a>
+        {% endfor %}
+    </div>
+    <div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
+        {% for image in yearone.images.slice(2) %}
+        <a href="{{ image.path }}" data-caption="{{ image.caption }}">
+            <img src="{{ image.path }}"
+                alt="{{ image.caption }}"
+                width="{{ image.width }}"
+                height="{{ image.height }}"
+                loading="{{"eager" if loop.index <= 4 else "lazy"}}" />
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% include "totop.njk" %}
