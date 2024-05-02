@@ -1,6 +1,7 @@
 {
     "hero": {
         "caption": "Arm's Length, 2024",
+        "alt": "Lights shine bright on the crowd at the Crocodile in Seattle.",
         "path": "/img/music/R0005015-hero.jpg",
         "width": "2160px",
         "height": "1215px"
@@ -8,90 +9,105 @@
     "images": [
         {
             "caption": "Theo Croker, 2024",
+            "alt": "Theo Croker playing trumpet at Nectar Lounge in Seattle.",
             "path": "/img/music/R0001991.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "Tomo Nakayama, 2024",
+            "alt": "Tomo Nakayama on stage at Conor Byrne Pub in Ballard.",
             "path": "/img/music/R0004031.jpg",
             "width": "1080px",
             "height": "1080px"
         },
         {
             "caption": "Militarie Gun, 2024",
+            "alt": "Ian Shelton of Militarie Gun points to the crowd with mic in hand at Neumos in Seattle.",
             "path": "/img/music/R0003345.jpg",
             "width": "1080px",
             "height": "1080px"
         },
         {
             "caption": "Carly Cosgrove, 2024",
+            "alt": "Tyler Kramer of Carly Cosgrove on the drums.",
             "path": "/img/music/R0004745.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "Carly Cosgrove, 2024",
+            "alt": "Carly Cosgrove playing at the Crocodile in Seattle.",
             "path": "/img/music/R0004920.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "Arm's Length, 2024",
+            "alt": "Arm's Length plays to the crowd on the Wax Bodega Tour.",
             "path": "/img/music/R0005056.jpg",
             "width": "1080px",
             "height": "608px"
         },
         {
             "caption": "Pool Kids, 2024",
+            "alt": "Christine Goodwyne of Pool Kids at Neumos in Seattle.",
             "path": "/img/music/R0003274.jpg",
             "width": "1080px",
             "height": "1080px"
         },
         {
             "caption": "Small Crush, 2024",
+            "alt": "Small Crush on stage at Barboza in Seattle.",
             "path": "/img/music/R0005522.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "Spiritual Cramp, 2024",
+            "alt": "Fan crowdsurfing during Spiritual Cramp's opening set at Neumos on the Life Under the Gun Tour.",
             "path": "/img/music/R0003050.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "Pool Kids, 2024",
+            "alt": "Bassist Nicolette Alvarez of Pool Kids on stage at Neumos in Seattle.",
             "path": "/img/music/R0003193.jpg",
             "width": "720px",
             "height": "1080px"
         },
         {
             "caption": "",
+            "alt": "Multi-instrumentalist Tomoki Sanders playing soprano saxophone with Kassa Overall.",
             "path": "/img/music/R0002334.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "",
+            "alt": "Guest vocalist singing with Kassa Overall at Nectar Lounge in Seattle.",
             "path": "/img/music/R0002397.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "Yuma Abe, 2024",
+            "alt": "Yuma Abe performing at The Sunset in Seattle.",
             "path": "/img/music/R0000311.jpg",
             "width": "1080px",
             "height": "720px"
         },
         {
             "caption": "Yuma Abe, 2024",
+            "alt": "Guitarist Kohei Kamoto playing his semi-hollow electric guitar at The Sunset.",
             "path": "/img/music/R0000309.jpg",
             "width": "1080px",
             "height": "1080px"
         },
         {
             "caption": "Arm's Length, 2024",
+            "alt": "Allen Steinberg of Arm's Length on stage at the Crocodile in Seattle.",
             "path": "/img/music/R0005335.jpg",
             "width": "1080px",
             "height": "1080px"

@@ -14,7 +14,7 @@ active: music
         {% for image in music.images %}
         <a class="uk-width-1-2@s" href="{{ image.path }}" data-caption="{{ image.caption }}">
             <img src="{{ image.path }}"
-                alt="{{ image.caption }}"
+                alt="{{ image.alt }}"
                 width="{{ image.width }}"
                 height="{{ image.height }}"
                 loading="{{"eager" if loop.index <= 4 else "lazy"}}" />
