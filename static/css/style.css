@@ -2,6 +2,20 @@ img::selection {
     background: none;
 }
 
+img {
+    opacity: 0;
+    transform: translateY(2vh);
+    visibility: hidden;
+    transition: opacity .7s ease-out, transform 0.4s ease-out;
+    will-change: opacity, visibility;
+}
+
+.bp-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
 @media (max-width: 639px) {
     .bp-bio {
         padding: 0 15px;
