@@ -3,6 +3,12 @@ img::selection {
 }
 
 img {
+    animation-name: bp-fade;
+    animation-duration: .4s;
+    animation-timing-function: ease-out;
+}
+
+.bp-hidden {
     opacity: 0;
     transform: translateY(2vh);
     visibility: hidden;
@@ -14,6 +20,16 @@ img {
     opacity: 1;
     transform: none;
     visibility: visible;
+}
+
+@keyframes bp-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 639px) {

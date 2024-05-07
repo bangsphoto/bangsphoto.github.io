@@ -10,7 +10,8 @@ window.addEventListener(
     "load",
     () => {
         const images = new Set(document.querySelectorAll("img"));
-        const observer = new IntersectionObserver(addVisibleClass, { threshold: 0.15 });
+        images.forEach((el) => { el.classList.add("bp-hidden"); });
+        const observer = new IntersectionObserver(addVisibleClass, { threshold: 0.1 });
         images.forEach((el) => observer.observe(el));
     },
     false
