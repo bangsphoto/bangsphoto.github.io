@@ -14,7 +14,7 @@
                             <div class="uk-dropdown">
                                 <ul class="uk-nav uk-dropdown-nav">
                                     {% for subitem in item.items %}
-                                    {% set url = "/" + item.label + "/" + subitem.label | replace(" ", "") | lower %}
+                                    {% set url = ("/" + item.label + "/" + subitem.label) | replace(" ", "") | lower %}
                                     <li class="{{ "uk-active" if page.filePathStem == url }}">
                                         <a href="{{ url }}">{{ subitem.label }}</a>
                                     </li>
@@ -23,7 +23,7 @@
                             </div>
                         </li>
                     {% else %}
-                        {% set url = "/" + item.label | replace(" ", "") | lower %}
+                        {% set url = ("/" + item.label) | replace(" ", "") | lower %}
                         <li class="{{ "uk-active" if page.filePathStem == url }}">
                             <a href="{{ url }}">{{ item.label }}</a>
                         </li>
