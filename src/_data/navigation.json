@@ -1,0 +1,22 @@
+{
+    "title": "bangsphoto",
+    "items": [
+        {
+            "label": "Snaps",
+            "items": [
+                {
+                    "label": "Busan"
+                },
+                {
+                    "label": "Year One"
+                }
+            ]
+        },
+        {
+            "label": "Music"
+        },
+        {
+            "label": "About"
+        }
+    ]
+}

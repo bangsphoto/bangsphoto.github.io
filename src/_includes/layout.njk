@@ -1,62 +1,30 @@
 ---
 title: bangsphoto
-active: none
+description: Andrew Bangs is a music photographer based in Seattle, WA
 ---
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Andrew Bangs is a music photographer based in Seattle, WA" />
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/css/uikit.min.css" />
-    {% set css %} {% include "style.css" %} {% endset %}
-    <style>
-        {{ css | cssmin | safe }}
-    </style>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit-icons.min.js"></script>
-  </head>
-  <body>
-    <nav class="uk-navbar-container uk-navbar-transparent">
-        <div class="uk-container">
-            <nav uk-navbar>
-                <div class="uk-navbar-left">
-                    <a class="uk-navbar-item uk-logo" href="/">bangsphoto</a>
-                </div>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav" uk-dropnav>
-                        {% set snapsPrefix = r/^snaps\/*/g %}
-                        <li class="{{ "uk-active" if snapsPrefix.test(active) }}">
-                            <a href>Snaps <span uk-drop-parent-icon></span></a>
-                            <div class="uk-dropdown">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    <li class="{{ "uk-active" if active == "snaps/busan" }}">
-                                        <a href="/snaps/busan">Busan</a>
-                                    </li>
-                                    <li class="{{ "uk-active" if active == "snaps/yearone" }}">
-                                        <a href="/snaps/yearone">Year One</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="{{ "uk-active" if active == "music" }}">
-                            <a href="/music">music</a>
-                        </li>
-                        <li class="{{ "uk-active" if active == "about" }}">
-                            <a href="/about">about</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="{{ description }}" />
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/css/uikit.min.css" />
+        {% set css %} {% include "style.css" %} {% endset %}
+        <style>
+            {{ css | cssmin | safe }}
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        {% include "navigation.njk" %}
+        <div class="uk-container uk-margin-bottom">
+            {{ content | safe }}
         </div>
-    </nav>
-    <div class="uk-container uk-margin-bottom">
-        {{ content | safe }}
-    </div>
-    {% set js %} {% include "index.js" %} {% endset %}
-    <script>
-        {{ js | jsmin | safe }}
-    </script>
-  </body>
+        {% set js %} {% include "index.js" %} {% endset %}
+        <script>
+            {{ js | jsmin | safe }}
+        </script>
+    </body>
 </html>
