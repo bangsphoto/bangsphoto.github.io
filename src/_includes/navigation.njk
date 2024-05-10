@@ -1,36 +1,34 @@
 <nav class="uk-navbar-container uk-navbar-transparent">
-    <div class="uk-container">
-        <nav uk-navbar>
-            <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-logo" href="/">{{ navigation.title }}</a>
-            </div>
-            <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav" uk-dropnav>
-                {% for item in navigation.items %}
+    <div class="uk-container" uk-navbar>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="/">{{ navigation.title }}</a>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav" uk-dropnav>
+            {% for item in navigation.items %}
+                {% if item.items %}
                     {% set parent = page.url.split("/").at(1) %}
-                    {% if item.items %}
-                        <li class="{{ "uk-active" if item.label == parent }}">
-                            <a href>{{ item.label }} <span uk-drop-parent-icon></span></a>
-                            <div class="uk-dropdown">
-                                <ul class="uk-nav uk-dropdown-nav">
-                                    {% for subitem in item.items %}
-                                    {% set url = ("/" + item.label + "/" + subitem.label) | replace(" ", "") | lower %}
-                                    <li class="{{ "uk-active" if page.filePathStem == url }}">
-                                        <a href="{{ url }}">{{ subitem.label }}</a>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                        </li>
-                    {% else %}
-                        {% set url = ("/" + item.label) | replace(" ", "") | lower %}
-                        <li class="{{ "uk-active" if page.filePathStem == url }}">
-                            <a href="{{ url }}">{{ item.label }}</a>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-                </ul>
-            </div>
-        </nav>
+                    <li class="{{ "uk-active" if item.label | lower == parent | lower }}">
+                        <a href>{{ item.label }} <span uk-drop-parent-icon></span></a>
+                        <div class="uk-dropdown">
+                            <ul class="uk-nav uk-dropdown-nav">
+                                {% for subitem in item.items %}
+                                {% set url = ("/" + item.label + "/" + subitem.label) | replace(" ", "") | lower %}
+                                <li class="{{ "uk-active" if page.filePathStem == url }}">
+                                    <a href="{{ url }}">{{ subitem.label }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </li>
+                {% else %}
+                    {% set url = ("/" + item.label) | replace(" ", "") | lower %}
+                    <li class="{{ "uk-active" if page.filePathStem == url }}">
+                        <a href="{{ url }}">{{ item.label }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        </div>
     </div>
 </nav>
