@@ -4,7 +4,7 @@ img::selection {
 
 img {
     animation-name: bp-fade;
-    animation-duration: .4s;
+    animation-duration: .3s;
     animation-timing-function: ease-out;
 }
 
@@ -12,7 +12,7 @@ img {
     opacity: 0;
     transform: translateY(2vh);
     visibility: hidden;
-    transition: opacity .7s ease-out, transform .4s ease-out;
+    transition: opacity .5s ease-out, transform .3s ease-out;
     will-change: opacity, visibility;
 }
 
